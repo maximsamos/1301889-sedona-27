@@ -68,24 +68,60 @@
       </section>
       <section>
         <h2>Форма поиска госциницы</h2>
-        <img src="img/map.png" width="1200" height="473" alt="map">
         <ul>
           <li>
             <p>
-              <h3>Заинтересовались?</h3></p>
+              <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+            </p>
             <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </li>
           <li>
             <h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
-            <!-- Здесь будет форма -->
-            <button type="button">НАЙТИ</button>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <p>
+                <label for="arrival_date"> Дата заезда </label>
+                <input id="arrival_date" type="text" name="date" placeholder="24 Апреля 2017">
+                <button type="button">
+                  <img src="img/calendar.svg">
+                </button>
+              </p>
+              <p>
+                <label for="date_of_departure"> Дата выезда </label>
+                <input id="date_of_departure" type="text" name="date" placeholder="04 Июля 2017">
+                <button type="button">
+                  <img src="img/calendar.svg">
+                </button>
+              </p>
+              <p>
+                <label for="adults"> Взрослые </label>
+                <input id="adults" type="number" name="number" placeholder="2">
+                <button type="button">
+                  <img src="img/minus.png" alt="иконка минус">
+                </button>
+                <button type="button">
+                  <img src="img/plus.png" alt="иконка плюс">
+                </button>
+              </p>
+              <p>
+                <label for="children"> Дети </label>
+                <input id="children" type="number" name="number" placeholder="0">
+                <button type="button">
+                  <img src="img/minus.png" alt="иконка минус">
+                </button>
+                <button type="button">
+                  <img src="img/plus.png" alt="иконка плюс">
+                </button>
+              </p>
+            </form>
+            <button type="submit">НАЙТИ</button>
           </li>
         </ul>
+        <img src="img/map.png" width="1200" height="473" alt="map">
       </section>
     </main>
     <footer>
       <p>#VISITSEDONA<br>
-      <a href="Тел: +7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
+      <a href="Тел: +7(495) 656-02-66">Тел: +7(495) 666-02-66</a>
       </p>
       <div>
         <ul>
