@@ -1,0 +1,220 @@
+body {
+margin: 0em;
+padding: 0;
+
+font-family: 'PT Sans', Arial, sans-serif;
+font-size: 14px;
+font-weight: 400;
+color: black;
+text-transform: uppercase;
+
+background-color: white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .main-navigation {
+    font-size: 14;
+    color: black;
+    font-weight: 700;
+  }
+
+  .site-navigation {
+    list-style: none;
+  }
+
+  .site-navigation a {
+    color: black;
+  }
+
+  .site-navigation a:hover,
+  .site-navigation a:focus {
+    color: #81b3d2;
+  }
+  .feature-list li{
+    list-style: none;
+    text-align: center;
+  }
+
+  .feature-list h3{
+    font-size: 21px;
+
+  }
+  
+  .features {
+    text-align: center;
+  }
+
+  .form-header {
+    color: white;
+    
+    background-color: #766357;
+  }
+  
+  .feature-form {
+    font-size: 30px;
+  }
+
+  .arrival-date,
+  .date-of-departure,
+  .adults,
+  .children {
+    font-weight: 700;
+    text-transform: inherit;
+    color: black;
+  }
+
+  /*Поиск гостиницы в седоне*/
+  .button-hotel {
+    color:  white;
+    background-color: #766357;
+    border: none;
+  }
+
+  .button-hotel:hover {
+    color: white;
+    background-color: #604e43;
+    border: none;
+  }
+
+  .button-hotel:active {
+    color: #857871;
+    background-color: #503e33;
+  }
+  
+/*кнопка поиска госциницы*/
+  .button-blue {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    color: white;
+    vertical-align: middle;
+    background-color: #81b3d2;
+    text-transform: uppercase;
+    border: none;
+  }
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.arrival-date-item,
+.date-of-departure-item,
+.adults-item,
+.children-item {
+  font-weight: 700;
+  text-transform: inherit;
+  color: black;
+  background-color: #f2f2f2;
+  border: #e5e5e5;
+}
+
+/* Наведение на поля формы поиска */
+.arrival-date-item:hover,
+.date-of-departure-item:hover,
+.adults-item:hover,
+.children-item:hover {
+  background-color: #ebebeb;
+}
+
+/* Фокус на поля формы поиска */
+.arrival-date-item:focus,
+.date-of-departure-item:focus,
+.adults-item:focus,
+.children-item:focus {
+  background-color: white;
+}
+
+/* футер*/
+.main-footer {
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  
+  background-color: white
+}
+
+.footer-copyright {
+  font-size: 14px;
+}
+
+.footer-contact {
+  color:  black;
+}
+
+.footer-social {
+  color: black;
+  list-style: none;
+}
+
+/* Пункт каталога */
+.hotel-item {
+font-size: 21px;
+color: black;
+}
+
+.hotel-item:hover {
+  color: #81b3d2;
+}
+
+.hotel-item:active {
+  color: #d0d0d0;
+}
+
+/*Кнопка подробнее*/
+.more-button {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    vertical-align: middle;
+    background-color: #81b3d2;
+    border: none;
+}
+
+.more-button:hover {
+  color: white;
+  background-color: #669ec0;
+}
+
+.more-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+/*Кнопка забронировать*/
+.order-button {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color:  white;
+  background-color: #766357;
+  border: none;
+}
+
+.order-button:hover {
+    color: white;
+    background-color: #604e43;
+}
+
+.order-button:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+/*Кнопка рейтинга*/
+.rating-button {
+  color: #666666;
+  background-color: #f2f2f2;
+}
