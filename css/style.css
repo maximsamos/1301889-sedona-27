@@ -1,100 +1,104 @@
 body {
-margin: 0em;
-padding: 0;
+  margin: 0;
+  padding: 0;
 
-font-family: 'PT Sans', Arial, sans-serif;
-font-size: 14px;
-font-weight: 400;
-color: black;
-text-transform: uppercase;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
 
-background-color: white;
-  }
+  background-color: white;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  .main-navigation {
-    font-size: 14;
-    color: black;
-    font-weight: 700;
-  }
+.main-navigation {
+  font-size: 14;
+  color: black;
+  font-weight: 700;
+}
 
-  .site-navigation {
-    list-style: none;
-  }
+.site-navigation {
+  list-style: none;
+}
 
-  .site-navigation a {
-    color: black;
-  }
+.site-navigation a {
+  color: black;
+}
 
-  .site-navigation a:hover,
-  .site-navigation a:focus {
-    color: #81b3d2;
-  }
-  .feature-list li{
-    list-style: none;
-    text-align: center;
-  }
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+.feature-list li{
+  list-style: none;
+  text-align: center;
+}
 
-  .feature-list h3{
-    font-size: 21px;
-
-  }
+.feature-list h3{
+  font-size: 21px;
+}
   
-  .features {
-    text-align: center;
-  }
+.features {
+  text-align: center;
+}
 
-  .form-header {
-    color: white;
-    
-    background-color: #766357;
-  }
+.form-header {
+  color: white;
+  background-color: #766357;
+}
   
-  .feature-form {
-    font-size: 30px;
-  }
+.feature-form {
+  font-size: 30px;
+}
 
-  .arrival-date,
-  .date-of-departure,
-  .adults,
-  .children {
-    font-weight: 700;
-    text-transform: inherit;
-    color: black;
-  }
+.arrival-date,
+.date-of-departure,
+.adults,
+.children {
+  font-weight: 700;
+  text-transform: inherit;
+  color: black;
+}
 
   /*Поиск гостиницы в седоне*/
-  .button-hotel {
-    color:  white;
-    background-color: #766357;
-    border: none;
-  }
+.button-hotel {
+  font-size: 21;
+  font-weight: 700;
+  color:  white;
+  background-color: #766357;
+  border: none;
+}
 
-  .button-hotel:hover {
-    color: white;
-    background-color: #604e43;
-    border: none;
-  }
+.button-hotel:hover {
+  font-size: 21;
+  font-weight: 700;
+  color: white;
+  background-color: #604e43;
+  border: none;
+}
 
-  .button-hotel:active {
-    color: #857871;
-    background-color: #503e33;
-  }
+.button-hotel:active {
+  font-size: 21;
+  font-weight: 700;
+  color: #857871;
+  background-color: #503e33;
+}
   
 /*кнопка поиска госциницы*/
-  .button-blue {
-    text-align: center;
-    font-size: 21px;
-    font-weight: 700;
-    color: white;
-    vertical-align: middle;
-    background-color: #81b3d2;
-    text-transform: uppercase;
-    border: none;
-  }
+.button-blue {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  color: white;
+  vertical-align: middle;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  border: none;
+}
 
 .button-blue:hover,
 .button-blue:focus {
@@ -159,8 +163,8 @@ background-color: white;
 
 /* Пункт каталога */
 .hotel-item {
-font-size: 21px;
-color: black;
+  font-size: 21px;
+  color: black;
 }
 
 .hotel-item:hover {
@@ -173,13 +177,13 @@ color: black;
 
 /*Кнопка подробнее*/
 .more-button {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    color: white;
-    vertical-align: middle;
-    background-color: #81b3d2;
-    border: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  vertical-align: middle;
+  background-color: #81b3d2;
+  border: none;
 }
 
 .more-button:hover {
@@ -204,8 +208,8 @@ color: black;
 }
 
 .order-button:hover {
-    color: white;
-    background-color: #604e43;
+  color: white;
+  background-color: #604e43;
 }
 
 .order-button:active {
@@ -214,7 +218,8 @@ color: black;
 }
 
 /*Кнопка рейтинга*/
-.rating-button {
+.rating-item {
   color: #666666;
   background-color: #f2f2f2;
 }
+
