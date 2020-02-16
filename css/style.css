@@ -15,16 +15,44 @@ a {
   text-decoration: none;
 }
 
+.visuallyhidden  {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Меню сайта eader*/
 .main-navigation {
   font-size: 14;
   color: black;
   font-weight: 700;
-}
 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  height: 56px;
+  margin: auto;
+}
+  
 .site-navigation {
   list-style: none;
+  
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
 }
-
+ 
 .site-navigation a {
   color: black;
 }
@@ -33,6 +61,181 @@ a {
 .site-navigation a:focus {
   color: #81b3d2;
 }
+
+/* слоган + визуал */
+
+.welcom-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 509px;
+  background-image: 
+    url("../img/polygon.svg"),
+    url("../img/bg_intro.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px;  
+	background-position: center bottom -1px, center top;
+}
+
+
+.map {
+  width: 1200px;
+  height: 473px;
+
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+}
+/* Интро Седона */
+
+.intro h3 {
+  margin-top: 55px;
+  font-size: 21px;
+}
+
+.intro p {
+  margin-bottom: 55px;
+}
+
+.intro {
+  height: 215px;
+  width: 1200px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+
+}
+
+.dummy-1 {
+  height: 1098px;
+  background-image: url(../img/dummy-1.jpg);
+  background-repeat: no-repeat;
+}
+
+
+
+/* Форма поиска гостиницы  */
+
+.form {
+  width: 568px;
+  height: 480px;
+  background-color: white;
+  margin-top: 43px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+
+.form-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  width: 459px;
+  height: 174px;
+}
+
+
+/* Дата въезда выезда */
+
+.arrival, 
+.departure,
+.aults-сhildren {
+  display: flex;
+}
+
+.arrival-date, 
+.date-of-departure {
+  margin-top: 10px;
+  height: 40px;
+  flex-grow: 3;
+  font-weight: 700;
+}
+
+.arrival-date-text, 
+.departure-date {
+  height: 40px;
+  flex-grow: 1;
+  background-color: black;
+}
+
+
+/* Взрослые дети */
+
+
+.aults {
+  margin-top: 10px;
+  margin-right: 42px;
+  font-weight: 700;
+}
+
+.сhildren {
+  margin: 10px;
+  margin-right: 19px;
+  margin-left: 50px;
+  font-weight: 700;
+}
+
+.quantity  {
+  display: flex;
+  height: 40px;
+  flex-grow: 1;
+}
+
+
+.plus, .minus  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  height: 40px;
+  width: 40px;
+}
+
+
+.features {
+  margin: auto;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1200px;
+}
+
+.features-2 {
+  margin: auto;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  height: 765px;
+}
+
+.features-2 .feature-form {
+  margin-top: 50px;
+}
+
+
+.feature-list {
+  margin: 0;
+  padding: 0;
+}
+
+.interested {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .feature-list li{
   list-style: none;
   text-align: center;
@@ -41,9 +244,16 @@ a {
 .feature-list h3{
   font-size: 21px;
 }
-  
+
+.interested-1 {
+  font-size: 14px;
+  line-height: 24px;
+
+}
+
 .features {
   text-align: center;
+  
 }
 
 .form-header {
@@ -55,22 +265,27 @@ a {
   font-size: 30px;
 }
 
-.arrival-date,
-.date-of-departure,
-.adults,
-.children {
-  font-weight: 700;
-  text-transform: inherit;
-  color: black;
+
+
+
+
+Поиск гостиницы в седоне
+.adults-children p {
+  display: flex;
+  flex-direction: row;
 }
 
-  /*Поиск гостиницы в седоне*/
+
 .button-hotel {
-  font-size: 21;
+  font-size: 21px;
   font-weight: 700;
   color:  white;
   background-color: #766357;
   border: none;
+  padding: 0;
+
+  height: 86px;
+  width: 568px;
 }
 
 .button-hotel:hover {
@@ -98,6 +313,11 @@ a {
   background-color: #81b3d2;
   text-transform: uppercase;
   border: none;
+  
+  width: 458px;
+  height: 58px;
+  margin-bottom: 57px;
+  padding: 0em;
 }
 
 .button-blue:hover,
@@ -111,14 +331,30 @@ a {
 }
 
 .arrival-date-item,
-.date-of-departure-item,
-.adults-item,
-.children-item {
+.date-of-departure-item {
   font-weight: 700;
   text-transform: inherit;
   color: black;
   background-color: #f2f2f2;
   border: #e5e5e5;
+  
+
+  width: 346px;
+  height: 38px;
+}
+
+
+.adults-item,
+.children-item  {
+  font-weight: 700;
+  text-transform: inherit;
+  color: black;
+  background-color: #f2f2f2;
+  border: #e5e5e5;
+  padding: 0;
+  
+  height: 40px;
+  width: 40px;
 }
 
 /* Наведение на поля формы поиска */
@@ -139,17 +375,24 @@ a {
 
 /* футер*/
 .main-footer {
+  display: flex;
+  width: 1200px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
   color: black;
   text-transform: uppercase;
   
-  background-color: white
+  background-color: white;
 }
 
 .footer-copyright {
   font-size: 14px;
+  margin-right: 14px;
 }
 
 .footer-contact {
@@ -159,6 +402,10 @@ a {
 .footer-social {
   color: black;
   list-style: none;
+}
+
+.copyright {
+  display: flex;
 }
 
 /* Пункт каталога */
@@ -223,3 +470,17 @@ a {
   background-color: #f2f2f2;
 }
 
+/* сеточные  стили 
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+  background-image: url("../img/sedona-index-1000.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+*/
