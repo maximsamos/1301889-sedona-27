@@ -40,18 +40,27 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1200px;
   height: 56px;
+  width: 1200px;
   margin: auto;
+
+  position: relative;
 }
-  
+
+.logo {
+  position: absolute;
+  right: 44%;
+}
+
 .site-navigation {
   list-style: none;
-  
+
   display: flex;
-  width: 600px;
   justify-content: space-around;
-}
+  flex-grow: 1;
+  margin-right: -10px;
+  margin-left: -60px;
+} 
  
 .site-navigation a {
   color: black;
@@ -79,8 +88,12 @@ a {
 
 
 .map {
-  width: 1200px;
+  position: absolute;
+  bottom: 1px;
   height: 473px;
+  width: 1200px;
+  
+  z-index: 1;
 
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
@@ -118,6 +131,8 @@ a {
 /* Форма поиска гостиницы  */
 
 .form {
+  position: relative;
+  z-index: 2;
   width: 568px;
   height: 480px;
   background-color: white;
@@ -209,6 +224,7 @@ a {
 }
 
 .features-2 {
+  position: relative;
   margin: auto;
   padding: 0;
   
@@ -226,6 +242,8 @@ a {
 
 
 .feature-list {
+  position: relative;
+  bottom: 40px;
   margin: 0;
   padding: 0;
 }
@@ -399,9 +417,26 @@ a {
   color:  black;
 }
 
+.social {
+  display: flex;
+}
+
 .footer-social {
-  color: black;
-  list-style: none;
+  display: flex;
+  margin-right: 10px;
+
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  border: none;
+}
+
+
+.twitter, 
+.facebook,
+.youtube {
+  display: flex;
+  margin: auto;
 }
 
 .copyright {
@@ -464,11 +499,13 @@ a {
   background-color: #503e33;
 }
 
-/*Кнопка рейтинга*/
+/*Кнопка рейтинга 
 .rating-item {
   color: #666666;
   background-color: #f2f2f2;
 }
+
+*/
 
 /* сеточные  стили 
 html,
@@ -477,10 +514,10 @@ body {
   min-height: 1750px;
 }
 
+
 body {
   background-image: url("../img/sedona-index-1000.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
-
 */
