@@ -7,168 +7,208 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <header>
-    <nav class="main-navigation">
-      <a href="#" class="logo">
-        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#" class="nav-info">Информация</a></li>
-        <li><a href="#" class="nav-foto-video">Фото и Видео</a></li>
-        <li><a class="visuallyhidden"></a></li>
-        <li><a href="#" class="nav-map">Карта Штата</a></li>
-        <li><a href="catalog.html" class="nav.catalog">Госциницы</a></li>
-      </ul>
-    </nav>
-  </header>
   <body>
-    <main>
-      <h1 class="visuallyhidden">Sedona</h1>
-      <section>
-        <div class="welcom-image">
-         <img src="img/intro-welcome.svg" width="459" height="353" alt="Intro">
-       </div>
-      </section>
-      <section class="features">
-        <h2 class="visuallyhidden">Преимущества</h2>
-        <div class="intro">
-         <h3>Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h3>
-         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-        <div class="dummy-1"></div>
-        <!--
-        <ol class="feature-list">
-            <li>
-                <h3>Настоящий городок — №1 —</h3>
-                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                  <img src="img/true_city.jpg" width="800" height="256" alt="Image">"
-                <ul>
-                  <li class="feature-item">
-                    <h3>Жильё</h3>
-                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                  </li>
-                  <li class="feature-item">
-                    <h3>Еда</h3>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                  </li>
-                  <li  class="feature-item">
-                    <h3>Сувениры</h3>
-                    <p>Не только китайского, но и местного производства!</p>
-                  </li >
-                </ul>
-            </li>
-            <li>
-                <h3>Там есть Мост дьявола— №2 —</h3>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              <img src="img/devil_bridge.jpg"  width="800" height="256" alt="Image">"
-            </li>
-            <li>
-                <h3>Небольшая площадь — №3 —</h3>
-                  <p>Все достопримечательности находятся очень близко</p>
-              </li>
-              <li>
-                <h3>Красивая дорога — №4 —</h3>
-                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </li>
-              <li>
-                <h3>Мало туристов — №5 —</h3>
-                  <p>Большинство едет в гранд каньон и толпится там</p>
-              </li>
-            </ol>
-          -->
-      </section>
-      <section class="features-2">
-        <h2 class="visuallyhidden">Форма поиска госциницы</h2>
-        <ul class="feature-list">
-          <li>
-              <p><h2 class="feature-form" >ЗАИНТЕРЕСОВАЛИСЬ?</h2></p>
-             <p class="interested-1">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          </li>
-          <div class="form">
-            <button type="button" class="button-hotel"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-            <form class="form-action" action="https://echo.htmlacademy.ru" method="POST"> 
-              <div class="arrival">
-                <label for="arrival-date" class="arrival-date"> Дата заезда : </label>
-                <div class="arrival-date-item">
-                  <input id="arrival-date" type="text" name="date" placeholder="24 Апреля 2017" class="arrival-date-item">
-                </div>
-              </div>
-              <div class="departure">
-                <label for="date-of-departure" class="date-of-departure"> Дата выезда: </label>
-                <div class="departure-date-text">
-                  <input id="date-of-departure" type="text" name="date" placeholder="04 Июля 2017" class="date-of-departure-item">
-                </div>
-              </div>
-              <div class="aults-сhildren">
-                <label for="adults" class="aults">Взрослые:</label>
-                <div class="quantity">
-                  <div class="minus">
-                    <button type="button" class="plus">
-                      <img src="img/minus.png" alt="иконка минус">
-                    </button>
-                  </div>
-                  <div>
-                    <input id="adults" type="number" name="number" placeholder="2" class="adults-item">
-                  </div>
-                  <img src="img/plus.png" alt="иконка минус">
-                </div>
-                <label for="children" class="сhildren">Дети:</label>
-                <div class="quantity">
-                  <div class="minus">
-                    <button type="button" class="plus">
-                      <img src="img/minus.png" alt="иконка минус">
-                    </button>
-                  </div>
-                  <div>
-                    <input id="adults" type="number" name="number" placeholder="2" class="adults-item">
-                  </div>
-                  <div class="plus">
-                    <button type="button" class="plus">
-                      <img src="img/plus.png" alt="иконка минус">
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <button type="submit" class="button-blue">НАЙТИ</button>
+    <div class="main-wrapper">
+      <header>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="#" class="nav-info">Информация</a></li>
+            <li><a href="#" class="nav-foto-video">Фото и Видео</a></li>
+            <li><a href="#" class="nav-map">Карта Штата</a></li>
+            <li><a href="catalog.html" class="nav-catalog">Гостиницы</a></li>
+          </ul>
+          <a href="#" class="logo">
+            <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
+          </a>
+        </nav>
+      </header>
+      <main>
+        <h1 class="visuallyhidden">Sedona</h1>
+        <section>
+          <div class="welcom-image">
+           <img src="img/intro-welcome.svg" width="459" height="353" alt="Intro">
+         </div>
+        </section>
+        <section class="features">
+          <h2 class="visuallyhidden">Преимущества</h2>
+          <div class="intro">
+           <h3>Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h3>
+           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
-        </ul>
-        <!-- карта <img src="img/map.png" width="1200" height="473" alt="map"> -->
-        <div class="map"></div>
-      </section> 
-    </main>
-    <footer class="main-footer">
-      <div class="footer-phone">
-      <p>#VISITSEDONA<br>
-        <a href="Тел:74956560266" class="footer-contact">Тел: +7(495) 666-02-66</a>
-      </p>
-      </div>
-      <div class="social">
-          <div>
-              <button type="button" class="footer-social">
-                <a href="https://twitter.com/" class="twitter">
-                  <img src="/img/twitter.svg" alt="Twitter">
-                </a>
-            </button>
+          <div class="dummy-1"></div>
+        </section>
+        <section class="search">
+          <h2 class="visuallyhidden">Форма поиска госциницы</h2>
+          <div class="container">
+            <b class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</b>
+            <p class="search-text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button type="button" class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
           </div>
-          <div>
-            <button type="button" class="footer-social">
-              <a href="https://facebook.com/" class="facebook">
-                <img src="/img/fb-icon.svg" alt="facebook">
+          <form action="" class="form">
+            <div class="form-inner">
+              <div class="form-row">
+                <label for="" class="form-label">Дата заезда:</label>
+                <div class="form-box">
+                  <input type="text" placeholder="24 Апреля 2017" class="form-input">
+                  <button type="button" class="form-button form-button-datepicker">
+                    <svg width="21" height="22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 21 22" style="enable-background:new 0 0 21 22;" xml:space="preserve">
+                    <path  d="M19.3,2h-2.8V0.6c0-0.4-0.3-0.7-0.7-0.7c-0.4,0-0.7,0.3-0.7,0.7V2h-3.9V0.6c0-0.4-0.3-0.7-0.7-0.7
+                      c-0.4,0-0.7,0.3-0.7,0.7V2H5.9V0.6C5.9,0.3,5.6,0,5.3,0C4.9,0,4.6,0.3,4.6,0.6V2H1.8C0.8,2,0,2.8,0,3.9v16.3c0,1,0.8,1.8,1.8,1.8
+                      h17.5c1,0,1.7-0.8,1.7-1.8V3.9C21,2.8,20.2,2,19.3,2z M19.7,20.2c0,0.2-0.2,0.5-0.4,0.5c0,0,0,0,0,0H1.8c-0.2,0-0.4-0.2-0.4-0.5V3.9
+                      c0-0.2,0.2-0.5,0.4-0.5h2.8v1.4c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7V3.4h3.9v1.4c0,0.4,0.3,0.7,0.7,0.7
+                      c0.4,0,0.7-0.3,0.7-0.7V3.4h3.9v1.4c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7V3.4h2.8c0.2,0,0.4,0.2,0.4,0.5L19.7,20.2
+                      L19.7,20.2z"/>
+                    <path d="M4.6,8.2h2.6v2.1H4.6V8.2z M4.6,11.7h2.6v2.1H4.6V11.7z M4.6,15.1h2.6v2.1H4.6V15.1z M9.2,15.1h2.6v2.1H9.2
+                      V15.1z M9.2,11.7h2.6v2.1H9.2V11.7z M9.2,8.2h2.6v2.1H9.2V8.2z M13.8,15.1h2.6v2.1h-2.6V15.1z M13.8,11.7h2.6v2.1h-2.6V11.7z
+                      M13.8,8.2h2.6v2.1h-2.6V8.2z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="" class="form-label">Дата выезда:</label>
+                <div class="form-box">
+                  <input type="text" placeholder="24 Апреля 2017" class="form-input">
+                  <button type="button" class="form-button form-button-datepicker">
+                    <svg width="21" height="22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 21 22" style="enable-background:new 0 0 21 22;" xml:space="preserve">
+                    <path  d="M19.3,2h-2.8V0.6c0-0.4-0.3-0.7-0.7-0.7c-0.4,0-0.7,0.3-0.7,0.7V2h-3.9V0.6c0-0.4-0.3-0.7-0.7-0.7
+                      c-0.4,0-0.7,0.3-0.7,0.7V2H5.9V0.6C5.9,0.3,5.6,0,5.3,0C4.9,0,4.6,0.3,4.6,0.6V2H1.8C0.8,2,0,2.8,0,3.9v16.3c0,1,0.8,1.8,1.8,1.8
+                      h17.5c1,0,1.7-0.8,1.7-1.8V3.9C21,2.8,20.2,2,19.3,2z M19.7,20.2c0,0.2-0.2,0.5-0.4,0.5c0,0,0,0,0,0H1.8c-0.2,0-0.4-0.2-0.4-0.5V3.9
+                      c0-0.2,0.2-0.5,0.4-0.5h2.8v1.4c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7V3.4h3.9v1.4c0,0.4,0.3,0.7,0.7,0.7
+                      c0.4,0,0.7-0.3,0.7-0.7V3.4h3.9v1.4c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7V3.4h2.8c0.2,0,0.4,0.2,0.4,0.5L19.7,20.2
+                      L19.7,20.2z"/>
+                    <path d="M4.6,8.2h2.6v2.1H4.6V8.2z M4.6,11.7h2.6v2.1H4.6V11.7z M4.6,15.1h2.6v2.1H4.6V15.1z M9.2,15.1h2.6v2.1H9.2
+                      V15.1z M9.2,11.7h2.6v2.1H9.2V11.7z M9.2,8.2h2.6v2.1H9.2V8.2z M13.8,15.1h2.6v2.1h-2.6V15.1z M13.8,11.7h2.6v2.1h-2.6V11.7z
+                      M13.8,8.2h2.6v2.1h-2.6V8.2z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="" class="form-label">Взорслые:</label>
+                  <div class="form-box-2">
+                    <button type="button" class="form-button form-button-minus">
+                        <svg  width="12px" height="4px" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 12 4.3" style="enable-background:new 0 0 12 4.3;" xml:space="preserve">
+                        <rect x="0" y="0.6" width="12" height="3"/>
+                        </svg>
+                    </button>
+                    <input type="text" placeholder="2" class="form-input form-input-number">
+                    <button type="button" class="form-button form-button-plus">
+                      <svg width="12px" height="12px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                      <polygon points="12,4.4 7.5,4.4 7.5,-0.1 4.5,-0.1 4.5,4.4 0,4.4 0,7.4 4.5,7.4 4.5,11.9 7.5,11.9 7.5,7.4 12,7.4 "/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="form-group-1">
+                  <label for="" class="form-label-children">Дети:</label>
+                  <div class="form-box-2">
+                    <button type="button" class="form-button form-button-minus">
+                      <svg  width="12px" height="4px" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          viewBox="0 0 12 4.3" style="enable-background:new 0 0 12 4.3;" xml:space="preserve">
+                        <rect x="0" y="0.6" width="12" height="3"/>
+                        </svg>
+                    </button>
+                    <input type="text" placeholder="0" class="form-input form-input-number">
+                    <button type="button" class="form-button form-button-plus">
+                      <svg width="12px" height="12px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                    <polygon points="12,4.4 7.5,4.4 7.5,-0.1 4.5,-0.1 4.5,4.4 0,4.4 0,7.4 4.5,7.4 4.5,11.9 7.5,11.9 7.5,7.4 12,7.4 "/>
+                    </svg>     
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row-search">
+                <button type="submit" class="form-submit">Найти</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+      <div class="map">
+        <img src="img/map.png" width="1200" height="594" alt="Адрес">
+        <footer class="main-footer map-footer">
+          <div class="footer-phone">
+          <p>#VISITSEDONA<br>
+            <a href="Тел:74956560266" class="footer-contact">Тел: +7(495) 666-02-66</a>
+          </p>
+          </div>
+          <ul class="social">
+            <li>
+              <a href="https://twitter.com/" alt="Логотип  соцсети twitter">
+                <svg class="twitter" width="17" height="15" version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 17 15" style="enable-background:new 0 0 17 15;" xml:space="preserve">
+                <path  d="M10.9,0.1c1.7-0.5,3,0.3,3.6,1.2c0.7-0.2,1.3-0.5,2-0.7c0,0.7-0.3,1.3-0.9,1.8C16.4,2.6,17,1.9,17,1.9
+                  c-0.2,1-1,1.8-1.6,2C15.2,10.7,12.2,15.1,5.3,15H4.9c-0.4,0-4.2-0.5-4.9-1.9c2.3,0.2,3.9-0.4,4.7-1.2c-1-0.3-2.7-0.5-3-2.9
+                  c0.3,0.1,0.6,0.2,1.2,0.1C1.7,8.2,0.4,7.5,0.4,5.3c0.3,0.3,1.1,0.5,1.3,0.5c-0.7-0.2-2-3.4-0.9-5C2.7,2.7,4.6,4.5,8,4.6
+                  C8.3,2.3,9.2,0.8,10.9,0.1z"/>
+                </svg>
               </a>
-          </button>
-        </div><div>
-          <button type="button" class="footer-social">
-            <a href="https://youtube.com/" class="youtube">
-              <img src="/img/youtube.svg"  alt="youtube">
-            </a>
-        </button>
+            </li>
+            <li>
+              <a href="https://facebook.com/" alt="Логотип  соцсети facebook">
+                <svg class="facebook" width="12" height="22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 12 22" style="enable-background:new 0 0 12 22;" xml:space="preserve">
+                <path class="st0" d="M12,4V0H8C5.8,0,4,1.8,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com/" alt="Логотип  соцсети youtube">
+                <svg  class="youtube" width="20" height="16"version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 20 16" style="enable-background:new 0 0 20 16;" xml:space="preserve">
+                <path class="st0" d="M17,0H3C1.4,0,0,1.4,0,3v10c0,1.6,1.4,3,3,3h14c1.6,0,3-1.4,3-3V3C20,1.4,18.6,0,17,0z M6,12V4l9,4
+                  C15,8,6,12,6,12z"/>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+          <div class="copyright">
+            <p class="footer-copyright">Website by</p>
+          <a class="logo-academy" href="https://htmlacademy.ru/" alt="HTML Academy">
+            <svg  width="115" height="41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 108.1 36.8" style="enable-background:new 0 0 108.1 36.8;" xml:space="preserve">
+              <path class="st0" d="M44.6,26.9c0.2,0,0.4,0,0.5-0.1v1.3c-0.4,0.1-0.8,0.2-1.2,0.2c-0.7,0.1-1.4-0.3-1.7-1c-0.9,0.7-2,1.1-3.1,1.1
+                c-1.5,0-2.9-0.8-2.9-2.5c0-2.1,2-2.8,3.7-2.8c0.7,0,1.5,0.1,2.2,0.3V23c0-1-0.8-1.8-2.2-1.8c-1,0-2.1,0.2-3,0.6v-1.7
+                c1-0.4,2.1-0.5,3.2-0.5c2.4,0,3.8,1.1,3.8,3.6v3c0,0.3,0.2,0.6,0.5,0.6c0,0,0,0,0,0L44.6,26.9L44.6,26.9z M38.2,25.7
+                c0.1,0.7,0.7,1.3,1.4,1.3c0,0,0,0,0,0h0.1c0.9,0,1.8-0.4,2.4-1v-1.4c-0.6-0.1-1.2-0.2-1.8-0.2C39.3,24.4,38.2,24.7,38.2,25.7
+                L38.2,25.7L38.2,25.7z M50.5,19.6c0.9,0,1.8,0.2,2.6,0.6V22c-0.7-0.5-1.5-0.7-2.3-0.7c-1.5-0.1-2.8,1.1-2.9,2.6s1.1,2.8,2.6,2.9
+                c0.1,0,0.2,0,0.3,0c0.9,0,1.7-0.2,2.4-0.6v1.7c-0.9,0.4-1.8,0.6-2.8,0.6c-2.3,0.1-4.3-1.6-4.5-3.9c0-0.1,0-0.3,0-0.4
+                c-0.1-2.4,1.8-4.4,4.2-4.5c0,0,0,0,0,0H50.5L50.5,19.6z M62.7,26.9c0.2,0,0.4,0,0.5-0.1v1.3c-0.4,0.1-0.8,0.2-1.2,0.2
+                c-0.7,0.1-1.4-0.3-1.7-1c-0.9,0.7-2,1.1-3.1,1.1c-1.5,0-2.9-0.8-2.9-2.5c0-2.1,2-2.8,3.7-2.8c0.7,0,1.5,0.1,2.2,0.3V23
+                c0-1-0.8-1.8-2.2-1.8c-1,0-2.1,0.2-3,0.6v-1.7c1-0.4,2.1-0.5,3.2-0.5c2.4,0,3.8,1.1,3.8,3.6v3c0,0.3,0.2,0.6,0.5,0.6c0,0,0,0,0,0
+                L62.7,26.9L62.7,26.9z M56.3,25.7c0.1,0.7,0.7,1.3,1.4,1.3c0,0,0,0,0,0h0.1c0.9,0,1.8-0.4,2.4-1v-1.4c-0.6-0.1-1.2-0.2-1.8-0.2
+                C57.4,24.4,56.3,24.7,56.3,25.7L56.3,25.7L56.3,25.7z M73,16v12.2h-1.7v-1.3c-0.8,1-1.9,1.6-3.2,1.5c-2.4-0.2-4.3-2.3-4.1-4.7
+                c0.1-2.2,1.9-3.9,4.1-4.1c1.1,0,2.2,0.4,3,1.3V16H73z M68.5,21.2c-1.5,0-2.8,1.2-2.8,2.8s1.2,2.8,2.8,2.8c1.2,0,2.2-0.7,2.7-1.7v-2
+                C70.7,21.9,69.6,21.3,68.5,21.2L68.5,21.2z M79,19.6c3.3,0,4.5,2.7,3.9,5.1h-6.2c0.2,1.5,1.7,2.1,3.2,2.1c0.9,0,1.8-0.2,2.6-0.6v1.6
+                c-0.9,0.4-2,0.6-3,0.6c-2.5,0-4.8-1.4-4.8-4.4c-0.1-2.3,1.7-4.3,4-4.4c0,0,0,0,0,0L79,19.6L79,19.6z M79.1,21.2
+                c-1.3-0.1-2.3,0.8-2.4,2.1v0.1h4.7c0.1-1.1-0.7-2.1-1.8-2.2C79.4,21.1,79.2,21.1,79.1,21.2L79.1,21.2z M84.8,28.2v-8.3h1.7v1
+                c0.7-0.8,1.7-1.3,2.8-1.3c1.1-0.1,2.1,0.5,2.6,1.4c0.8-0.8,1.8-1.3,2.9-1.3c1.7-0.1,3.1,1.2,3.2,2.9c0,0.1,0,0.3,0,0.4v5.2h-1.9V23
+                c0.1-0.9-0.5-1.7-1.4-1.7c0,0,0,0,0,0h-0.3c-0.8,0.1-1.6,0.5-2.1,1.1v5.8h-1.9V23c0.1-0.9-0.6-1.7-1.4-1.7c0,0,0,0,0,0h-0.2
+                c-0.9,0.1-1.7,0.6-2.2,1.3v5.6L84.8,28.2L84.8,28.2z M106.1,19.8h1.9l-3.9,9.5c-0.9,2.2-2.1,2.9-3.3,2.9c-0.4,0-0.7-0.1-1.1-0.1
+                v-1.6c0.3,0.1,0.6,0.1,0.8,0.1c0.9,0,1.6-0.6,2.1-1.9l0.2-0.4l-4-8.4h2l2.9,6.3L106.1,19.8z M38.7,1.4v4.8c0.7-0.7,1.7-1.1,2.7-1.1
+                c1.8-0.1,3.3,1.3,3.4,3.1c0,0.1,0,0.2,0,0.3v5.1H43V8.7c0.1-1-0.6-1.9-1.6-2c0,0,0,0,0,0h-0.3c-1,0.1-1.8,0.6-2.3,1.4v5.5h-1.9V1.4
+                H38.7L38.7,1.4z M49.9,2.3v3h3v1.6h-3v3.8c0,1.1,0.5,1.5,1.6,1.5c0.6,0,1.2-0.1,1.7-0.3v1.6c-0.7,0.2-1.5,0.4-2.2,0.4
+                c-1.4,0.2-2.7-0.8-2.8-2.2c0-0.2,0-0.4,0-0.5V6.9h-1.6V5.2h1.5V2.7L49.9,2.3z M55.3,13.6V5.3H57v1C57.7,5.5,58.7,5,59.8,5
+                c1-0.1,2,0.4,2.6,1.3C63.1,5.5,64.2,5,65.3,5c1.7-0.1,3.1,1.2,3.2,2.9c0,0.2,0,0.3,0,0.5v5.2h-1.9V8.4c0.1-0.9-0.5-1.7-1.4-1.7
+                c0,0,0,0,0,0h-0.2c-0.8,0.1-1.6,0.5-2.1,1.1v5.8h-1.9V8.4c0.1-0.9-0.5-1.7-1.4-1.7c0,0,0,0,0,0h-0.2c-0.9,0.1-1.7,0.6-2.2,1.3v5.6
+                L55.3,13.6L55.3,13.6z M71.2,1.4H73v12.1h-1.8V1.4z M14.7,0h-0.2L0,1.5v26.7l14.6,8.7l14.6-8.7V1.5L14.7,0z M27.2,27.1l-12.7,7.5
+                L1.9,27.1V16.2l12.6,7.5V25l-8.6-5.1v1.3l8.7,5.2v1.4l-8.7-5.2V24l8.7,5.2l8.7-5.2v-5.7l3.9-2.3L27.2,27.1L27.2,27.1z M27.2,14.6
+                l-3.5,2l-1.6,1L14.5,13v1.3l6.5,3.9l0,0l-0.1,0.1l-1,0.5l-5.4-3.2V17l4.2,2.5l-1,0.7l-3.2-1.9v1.3l2.1,1.2l-2.1,1.3L2,14.6l12.5-7.5
+                L27.2,14.6z M27.2,13.2L14.5,5.7L1.9,13.2v-10l12.7-1.3l12.6,1.3V13.2C27.2,13.2,27.2,13.2,27.2,13.2z"/>
+            </svg>
+
+          </a>
+          </div>
+        </footer>
       </div>
-      </div>
-      <div class="copyright">
-        <p class="footer-copyright">Website by</p>
-      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
-      </div>
-    </footer>
+    </div>
   </body>
 </html>
