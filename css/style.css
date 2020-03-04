@@ -78,21 +78,25 @@ a {
 }
 
 .site-navigation li {
-    width: 20%;
-    text-align: center;
+  width: 20%;
+  text-align: center;
 }
   
 .site-navigation li:nth-child(4n+2) {
-    margin-right: 20%;
+  margin-right: 20%;
 }
    
 .site-navigation a {
-    color: #000000;
+  color: #000000;
 }
 
 .logo {
-    display: block;
-    margin-top: -56px;
+  display: block;
+  margin-top: -56px;
+}
+
+.site-navigation .nav-catalog {
+  color: #766357;
 }
 
 
@@ -138,11 +142,99 @@ a {
   margin-right: 200px;
 }
 
-.dummy-1 {
-  height: 1098px;
-  background-image: url(../img/dummy-1.jpg);
+
+/* Приемущества */
+.feature-list {
+  padding: 0;
+  margin: 0;
+}
+
+.place {
+  display: flex;
+}
+
+.item {
+  background-color: #7eb3d2;
+}
+
+.item h3 {
+  margin-top: 44px;
+  padding: 0px 125px;
+
+  font-size: 21px;
+  line-height: 24px;
+  color:#ffffff;
+}
+
+.item  p {
+  margin-bottom: 25px;
+  padding: 0px 48px;
+
+  color: #ffffff;
+} 
+
+.feature-list ul {
+  display: flex;
+  padding: 0;
+
+}
+
+.feature-list li {
+  list-style: none;
+  text-align: center;
+}
+
+
+.feature-item {
+  min-width: 400px;
+  padding: 137px 43px 10px;
+  min-height: 330px;
+  background-color: #ffffff;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+}
+
+.feature-item:first-child {
+  background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
-  }
+  background-position: 163px 60px;
+}
+
+.feature-item:nth-child(2) {
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: 163px 60px;
+}
+
+.feature-item:last-child {
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: 167px 56px;
+}
+
+.feature-list-2  {
+  justify-content: space-between;
+}
+
+.feature-list ul.feature-list-2 
+li {
+  min-width: 400px;
+  padding: 23px 63px 10px;
+  min-height: 256px;
+}
+
+.feature-list ul.feature-list-2 
+li h3 {
+line-height: 24px;
+font-size: 21px;
+padding: 0px 57px;
+}
+
+.feature-list ul.feature-list-2 p {
+  margin-top: 23px;
+}
 
 
 /* Приемущества 2 */
@@ -318,6 +410,15 @@ a {
   background-color: #81b3d2;
   border: none;
 }
+
+.form-submit:hover,
+.form-submit:focus {
+  background-color: #669ebf;
+}
+.form-submit:active {
+  background-color: #94b8d0;
+}
+
 
 /* Карта */
 .map {
