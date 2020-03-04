@@ -276,6 +276,16 @@ padding: 0px 57px;
   background-color: #756357;
 }
 
+.search-button:hover,
+.search-button:focus {
+   background-color: #604e44;
+}
+
+.search-button:active{
+  color: #938a85;
+   background-color: #503e32;
+}
+
 .search .container {
   display: flex;
   flex-direction: column;
@@ -416,7 +426,8 @@ padding: 0px 57px;
   background-color: #669ebf;
 }
 .form-submit:active {
-  background-color: #94b8d0;
+  color: #92bbd1;
+  background-color: #5596be;
 }
 
 
