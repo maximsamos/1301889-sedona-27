@@ -554,15 +554,295 @@ padding: 0px 57px;
 }
 
 
-/* Страница каталога */
+/* Страница каталога 
+----------------------------- */
 
+/* Форма */
 .form-catalog {
+  display: flex;
+  align-items: center;
+
   background-image: url(../img/dummy-2.jpg);
   background-repeat: no-repeat;
   width: 1200px;
-  height: 305px;
+  height: 218px;
 }
 
+.form-catalog ul {
+  margin-left: 71px;
+  padding: 0;
+  list-style: none;
+}
+
+.form-catalog .type-housing {
+  margin-left: 121px;
+  padding: 0;
+  list-style: none;
+}
+
+.form-catalog ul li {
+  margin: 26px 0px;
+}
+.form-catalog  a {
+  color: #ffffff;
+}
+
+.form-catalog  p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter-range {
+  width: 318px;
+  margin-left: 337px;
+  margin-bottom: 8px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 33px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  box-sizing: initial;
+  width: 82px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  box-sizing: initial;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin-left: 84px;
+  padding: 6px 31px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.form-custom-checkbox {
+  position: relative;
+  padding-left: 42px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.form-custom-checkbox::before {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-catalog-checkbox:checked + .form-custom-checkbox::before {
+  background-image: url(../img/checkbox-on.svg);
+  width: 26px;
+}
+
+.form-catalog-checkbox:disabled + .form-custom-checkbox::before {
+  background-image: url(../img/checkbox-on-dis.svg);
+  width: 26px;
+}
+
+
+/* aside */
+.search-results {
+  display: flex;
+  align-items: center;
+  min-height: 86px;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5 ;
+}
+
+.search-results li  {
+  list-style: none;
+}
+
+.search-results h3 {
+  margin-left: 72px;
+  font-size: 21px;
+}
+
+.search-results p {
+  margin-left: 49px;
+  font-size: 12px;
+}
+
+.sorting  {
+  display: flex;
+  
+}
+
+.sorting a {
+
+  margin-right: 32px;
+  font-size: 12px;
+  color: #000000;
+}
+
+.sorting li:first-child a {
+  color: #81b3d2;
+}
+
+.sorting li:nth-child(2) a {
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting li:last-child a {
+  color: #cacaca;
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting li a:hover {
+  color: #81b3d2;
+}
+
+.sorting li a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.arrow-up-down {
+  display: flex;
+  margin-left: 465px;
+}
+
+.arrow-up-down a {
+  margin-left: 10px;
+}
+
+.arrow-up-down .icon-up {
+  fill: #cacaca;
+}
+
+.arrow-up-down .icon-down {
+  fill: #81b3d2;
+}
+
+
+
+/* Результаты поиска */
 .results-list {
   margin: 0;
   padding: 0;

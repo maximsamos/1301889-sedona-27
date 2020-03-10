@@ -17,16 +17,83 @@
             <li><a href="#" class="nav-map">Карта Штата</a></li>
             <li><a href="catalog.html" class="nav-catalog">Гостиницы</a></li>
           </ul>
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Sedona">
           </a>
         </nav>
       </header>
       <main>
         <section>
-          <form action="" class="form-catalog">
+          <form class="form-catalog" action="https://echo.htmlacademy.ru/courses" method="GET">
+          <ul>
+            <p>Инфраструктура:</p>
+            <li>
+              <input class="visuallyhidden form-catalog-checkbox" type="checkbox" name="pool" id="pool-filed" checked>
+              <label class="form-custom-checkbox" for="pool-filed">Бассейн</label>
+            </li>
+            <li>
+              <input class="visuallyhidden form-catalog-checkbox" type="checkbox" name="parking" id="parking-filed" unchacked>
+              <label class="form-custom-checkbox" for="parking-filed">Парковка</label>
+            </li>
+            <li>
+              <input class="visuallyhidden form-catalog-checkbox" type="checkbox" name="wi-fi" id="wi-fi-filed"unchacked>
+              <label class="form-custom-checkbox" for="wi-fi-filed">wi-fi</label>
+            </li>
+          </ul>
+          <ul class="type-housing">
+            <p>Тип Жилья:</p>
+            <li>
+              <input class="visuallyhidden form-catalog-checkbox" type="checkbox" name="hotel" id="hotel-filed" checked>
+              <label class="form-custom-checkbox" for="hotel-filed">Гостиница</label>
+            </li>
+            <li>
+              <input class="visuallyhidden form-catalog-checkbox" type="checkbox" name="hotel" id="motel-filed" checked>
+              <label class="form-custom-checkbox" for="motel-filed">Мотель</label>
+            </li>
+            <li>
+              <input class="visuallyhidden form-catalog-checkbox" type="checkbox" name="appartment" id="appartment-filed" checked>
+              <label class="form-custom-checkbox" for="appartment-filed">Аппартаменты</label>
+            </li>
+          </ul>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
           </form>
         </section>
+        <aside class="search-results">
+          <h3>Найдено: 3</h3><p>Сортировка:</p>
+          <ul class="sorting">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+          <div class="arrow-up-down">
+            <a href="">
+              <svg  class="icon-up" width="11" height="10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 11 10" style="enable-background:new 0 0 11 10;" xml:space="preserve">
+              <path d="M5.5,0L0,10h11L5.5,0z"/>
+              </svg> 
+            </a>
+            <a href="">
+              <svg class="icon-down" width="11" height="10" alt="icon up" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 11 10" style="enable-background:new 0 0 11 10;" xml:space="preserve">
+              <path d="M5.5,10L0,0h11"/>
+              </svg>
+            </a>
+          </div>
+        </aside>
         <section>
         <h1 class="visuallyhidden">Cписок результатов</h1>
         <ul class="results-list">
