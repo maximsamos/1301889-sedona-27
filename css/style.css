@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
 
@@ -77,9 +77,25 @@ a {
   color: #81b3d2;
 }
 
+.site-navigation a:active {
+  color: #cacaca;
+}
+
 .site-navigation li {
   width: 20%;
-  text-align: center;
+  line-height: 56px;
+}
+
+.site-navigation li:nth-child(4n-3),
+.site-navigation li:nth-child(4n-2) {
+  padding-left: 73px;
+  text-align: left;
+}
+
+.site-navigation li:nth-child(4n-1),
+.site-navigation li:nth-child(4n) {
+  padding-right: 75px;
+  text-align: right;
 }
   
 .site-navigation li:nth-child(4n+2) {
@@ -109,10 +125,11 @@ a {
 
   height: 509px;
   background-image: 
-    url("../img/polygon.svg"),
-    url("../img/bg_intro.jpg");
+    url(../img/polygon.svg),
+    url(../img/bg_intro.jpg);
   background-repeat: no-repeat;
   background-position: center bottom -1px, center top;
+  background-color: #ffffff;
 }
 
 
@@ -127,7 +144,7 @@ a {
 }
 
 .intro h3 {
-  margin-top: 56px;
+  margin-top: 60px;
   margin-bottom: 0;
   margin-left: 312px;
   margin-right: 312px;
@@ -135,8 +152,8 @@ a {
   font-size: 21px;
 }
 
-  .intro p {
-  margin-top: 32px;
+.intro p {
+  margin-top: 35px;
   margin-bottom: 55px;
   margin-left: 200px;
   margin-right: 200px;
@@ -149,17 +166,22 @@ a {
   margin: 0;
 }
 
+.feature-list p {
+  line-height: 19px;
+}
+
 .place {
   display: flex;
 }
 
 .item {
+  width: 400px;
   background-color: #7eb3d2;
 }
 
 .item h3 {
   margin-top: 44px;
-  padding: 0px 125px;
+  padding: 0px 120px;
 
   font-size: 21px;
   line-height: 24px;
@@ -187,13 +209,19 @@ a {
 
 .feature-item {
   min-width: 400px;
-  padding: 137px 43px 10px;
+  padding: 137px 48px 10px;
   min-height: 330px;
   background-color: #ffffff;
 }
 
+.feature-item p {
+  line-height: 22px;
+}
+
+
 .feature-item h3 {
   font-size: 21px;
+  margin-top: 24px;
 }
 
 .feature-item:first-child {
@@ -218,22 +246,26 @@ a {
   justify-content: space-between;
 }
 
-.feature-list ul.feature-list-2 
-li {
+.list-item:nth-child(3) p {
+  padding: 0 13px;
+
+}
+
+.feature-list-2 li {
   min-width: 400px;
-  padding: 23px 63px 10px;
+  padding: 25px 63px 10px;
   min-height: 256px;
 }
 
-.feature-list ul.feature-list-2 
-li h3 {
+.list-item p {
+  line-height: 20px;
+  margin-top: 21px;
+}
+
+.list-item h3 {
 line-height: 24px;
 font-size: 21px;
 padding: 0px 57px;
-}
-
-.feature-list ul.feature-list-2 p {
-  margin-top: 23px;
 }
 
 
@@ -251,7 +283,7 @@ padding: 0px 57px;
 }
 
 .search-title {
-  padding-top: 13px;
+  padding-top: 17px;
   font-size: 30px;
 }
 
@@ -263,7 +295,7 @@ padding: 0px 57px;
 }
 
 .search-button {
-  margin-top: 32px;
+  margin-top: 34px;
   border: 0;
 
   height: 86px;
@@ -278,12 +310,12 @@ padding: 0px 57px;
 
 .search-button:hover,
 .search-button:focus {
-   background-color: #604e44;
+  background-color: #604e44;
 }
 
-.search-button:active{
+.search-button:active {
   color: #938a85;
-   background-color: #503e32;
+  background-color: #503e32;
 }
 
 .search .container {
@@ -318,7 +350,7 @@ padding: 0px 57px;
 }
 
 .form-label {
-  margin-top: 8px;
+  margin-top: 11px;
   width: 114px;
   font-weight: 700;
 }
@@ -343,7 +375,7 @@ padding: 0px 57px;
   width: 230px;
 }
 
-.form-box-2{
+.form-box-2 {
   display: flex;
   margin-left: 30px;
 }
@@ -414,6 +446,7 @@ padding: 0px 57px;
   margin-top: 20px;
 
   text-transform: uppercase;
+  letter-spacing: -1px;
   font-size: 21px;
   font-weight: 700;
   color: #ffffff;
@@ -485,13 +518,14 @@ padding: 0px 57px;
 }
 
 .social  {
-  margin-right: 48px;
+  margin-right: 54px;
   padding: 0;
   display: flex;
 }
 
 .social li {
   display: flex;
+  align-items: center;
   margin-left: 5px;
   margin-bottom: 8px;
   width: 46px;
@@ -564,18 +598,21 @@ padding: 0px 57px;
 
   background-image: url(../img/dummy-2.jpg);
   background-repeat: no-repeat;
+  background-color: #ffffff;
   width: 1200px;
   height: 218px;
 }
 
 .form-catalog ul {
   margin-left: 71px;
+  margin-top: 8px;
   padding: 0;
   list-style: none;
 }
 
 .form-catalog .type-housing {
   margin-left: 121px;
+  margin-top: 9px;
   padding: 0;
   list-style: none;
 }
@@ -595,7 +632,7 @@ padding: 0px 57px;
 
 .filter-range {
   width: 318px;
-  margin-left: 337px;
+  margin-left: 348px;
   margin-bottom: 8px;
 
   color: #ffffff;
@@ -612,6 +649,7 @@ padding: 0px 57px;
 
 .price-controls {
   position: relative;
+  display: flex;
 
   height: 36px;
   margin-bottom: 20px;
@@ -636,25 +674,27 @@ padding: 0px 57px;
 }
 
 .price-controls label {
-  display: inline-block;
+  /* display: inline-block; */
 
   font-size: 14px;
   line-height: 33px;
-  vertical-align: top;
+  /* vertical-align: top; */
 
   cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+   padding-left: 63px;
+}
+
 .price-controls .max-price {
-  box-sizing: initial;
-  width: 82px;
-  padding-left: 65px;
+  padding-left: 75px;
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
+  height: 35px;
 
   color: inherit;
   font: inherit;
@@ -707,13 +747,13 @@ padding: 0px 57px;
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .btn-transparent {
   display: block;
   margin-left: 84px;
-  padding: 6px 31px;
+  padding: 6px 34px;
 
   font-size: 14px;
   line-height: 20px;
@@ -734,7 +774,8 @@ padding: 0px 57px;
 
 .form-custom-checkbox {
   position: relative;
-  padding-left: 42px;
+  padding-left: 41px;
+  line-height: 20px;
   cursor: pointer;
   color: #ffffff;
 }
@@ -878,7 +919,7 @@ padding: 0px 57px;
 }
 
 .img-hotel-item-box h3 {
-  margin: 0;
+  margin-top: 6px;
   font-size: 21px;
 }
 
@@ -939,11 +980,12 @@ padding: 0px 57px;
 
 .hotel-more p {
   margin-bottom: 16px;
-  margin-top: 0;
+  margin-top: -11px;
 }
 
 .more-button {
-  padding: 4px 17px;
+  padding: 5px 17px;
+  margin-top: 1px;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -964,12 +1006,13 @@ padding: 0px 57px;
 
 .hotel-price p {
   margin-bottom: 16px;
-  margin-top: 0;
+  margin-top: -12px;
 }
 
 .order-button {
-  padding: 4px 16px;
+  padding: 5px 17px;
   margin-left: 6px;
+  margin-top: 3px;
 
   font-size: 14px;
   font-weight: 700;
